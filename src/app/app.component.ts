@@ -16,7 +16,7 @@ export class AppComponent {
 
   constructor(private tvmazemxcheung: tvmazemxcheungService) {
     this.show$ = this.tvmazemxcheung.getShow(this.showId);
-    this.footerDetails = {caption : "Made with love by ACME v3 Pty Ltd."};
+    this.footerDetails = {caption : 'Made with love by ACME v3 Pty Ltd.'};
 
   }
 }
