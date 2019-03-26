@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Show, tvmazemxcheungService } from 'tvmazemxcheung';
 import { HeadermxcheungComponent } from 'headermxcheung';
-import { FootermxcheungComponent } from 'footermxcheung';
+import { FooterDetails, FootermxcheungComponent } from 'footermxcheung';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,12 @@ import { FootermxcheungComponent } from 'footermxcheung';
 })
 export class AppComponent {
   show$: Observable<Show>;
-  showId = 359;
+  showId = 360;
+  footerDetails: FooterDetails;
 
   constructor(private tvmazemxcheung: tvmazemxcheungService) {
     this.show$ = this.tvmazemxcheung.getShow(this.showId);
+    this.footerDetails = {caption : "Made with love by ACME v3 Pty Ltd."};
+
   }
 }
