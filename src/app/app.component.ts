@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Show, tvmazemxcheungService } from 'tvmazemxcheung';
-import { HeadermxcheungComponent } from 'headermxcheung';
+import { HeaderDetails, HeadermxcheungComponent } from 'headermxcheung';
 import { FooterDetails, FootermxcheungComponent } from 'footermxcheung';
 
 @Component({
@@ -11,12 +11,14 @@ import { FooterDetails, FootermxcheungComponent } from 'footermxcheung';
 })
 export class AppComponent {
   show$: Observable<Show>;
-  showId = 360;
+  showId = 361;
   footerDetails: FooterDetails;
+  headerDetails: HeaderDetails;
 
   constructor(private tvmazemxcheung: tvmazemxcheungService) {
     this.show$ = this.tvmazemxcheung.getShow(this.showId);
-    this.footerDetails = {caption : 'Made with love by ACME v3 Pty Ltd.'};
+    this.headerDetails = {caption : 'Angular 7 CICD Example v2.'};
+    this.footerDetails = {caption : 'Made with love by ACME v4 Pty Ltd.'};
 
   }
 }
