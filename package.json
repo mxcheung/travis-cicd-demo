@@ -22,13 +22,8 @@
     "@angular/router": "~7.2.0",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
-<<<<<<< Updated upstream
-    "footermxcheung": "0.0.3",
-    "headermxcheung": "0.0.3",
-=======
     "footermxcheung": "0.0.4",
     "headermxcheung": "0.0.6",
->>>>>>> Stashed changes
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "tvmazemxcheung": "0.0.5",
