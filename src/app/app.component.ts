@@ -11,14 +11,19 @@ import { FooterDetails, FootermxcheungComponent } from 'footermxcheung';
 })
 export class AppComponent {
   show$: Observable<Show>;
-  showId = 361;
+  showId = 365;
   footerDetails: FooterDetails;
   headerDetails: HeaderDetails;
 
   constructor(private tvmazemxcheung: tvmazemxcheungService) {
     this.show$ = this.tvmazemxcheung.getShow(this.showId);
-    this.headerDetails = {caption : 'Angular 7 CICD Example v2.'};
-    this.footerDetails = {caption : 'Made with love by ACME v4 Pty Ltd.'};
+    this.headerDetails = {caption : 'Angular 7 CICD Example v3.'};
+    this.headerDetails.menuItems = [
+      { name: 'Teachers', href: 'Teachers' },
+      { name: 'Home', href: 'Home' },
+      { name: 'Menu1', href: 'Menu1' }
+    ];
+    this.footerDetails = {caption : 'Made with love by ACME v5 Pty Ltd.'};
 
   }
 }
