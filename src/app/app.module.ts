@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import { tvmazemxcheungModule } from 'tvmazemxcheung';
 
 import { FootermxcheungModule } from 'footermxcheung';
+import { HomemxcheungModule } from 'homemxcheung';
 import { StudentmxcheungModule } from 'studentmxcheung';
 import { TeachermxcheungModule } from 'teachermxcheung';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent],
+  declarations: [AppComponent,  HeaderComponent],
   imports: [BrowserModule,
     AppRoutingModule,
     tvmazemxcheungModule,
+    HomemxcheungModule,
     StudentmxcheungModule,
-    TeachermxcheungModule, FootermxcheungModule],
+    TeachermxcheungModule,
+    FootermxcheungModule],
   providers: [],
   bootstrap: [AppComponent]
 })
