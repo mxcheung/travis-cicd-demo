@@ -1,17 +1,25 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { tvmazemxcheungModule } from 'tvmazemxcheung';
-import { HeadermxcheungModule } from 'headermxcheung';
 import { FootermxcheungModule } from 'footermxcheung';
+import { StudentmxcheungModule } from 'studentmxcheung';
+import { TeachermxcheungModule } from 'teachermxcheung';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        HeaderComponent
       ],
-      imports: [tvmazemxcheungModule,
-                HeadermxcheungModule,
+      imports: [AppRoutingModule,
+                tvmazemxcheungModule,
+                StudentmxcheungModule,
+                TeachermxcheungModule,
                 FootermxcheungModule],
     }).compileComponents();
   }));

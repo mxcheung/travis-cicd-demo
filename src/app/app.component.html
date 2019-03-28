@@ -1,5 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<lib-headermxcheung [headerDetails]=headerDetails></lib-headermxcheung>
+<app-header></app-header>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
 <tm-poster [showId]=showId></tm-poster>
 <pre>{{ show$ | async | json }}</pre>
 <lib-footermxcheung [footerDetails]=footerDetails></lib-footermxcheung>
