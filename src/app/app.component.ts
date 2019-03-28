@@ -11,7 +11,7 @@ import { FooterDetails, FootermxcheungComponent } from 'footermxcheung';
 })
 export class AppComponent {
   show$: Observable<Show>;
-  showId = 365;
+  showId = 366;
   footerDetails: FooterDetails;
   headerDetails: HeaderDetails;
 
